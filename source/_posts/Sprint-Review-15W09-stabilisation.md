@@ -19,7 +19,7 @@ J'ai [transcrit le poster](/2015/03/13/Presentation/) soumis (et accepté?) à [
 
 J'ai aussi commencé un article sur le minimum à savoir pour [configurer un ezVIS](/2015/03/19/Configuration/).
 
-J'en profite pour noter les sujets (et les liens) à présenter lors de cette *sprint review* numéro 9 (?) qui expose les tâches menées à bien depuis la semaine 9.
+J'en profite pour noter les sujets (et les liens) à présenter lors de cette *sprint review* numéro 9 qui expose les tâches menées à bien depuis la semaine 9 de 2015.
 
 
 # machine virtuelle
