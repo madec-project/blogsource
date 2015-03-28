@@ -111,3 +111,5 @@ Cette déclaration modifiera le document précédent pour donner ceci:
 Cela peut paraître inutile pour l'instant, mais l'intérêt de cette redondance deviendra évident avec la manipulation de champs multivalués, par exemple.
 
 Le fait d'avoir déclaré une clé `visible` avec une valeur `true` implique que le champ sera visible dans la table des documents.
+
+La partie `label` de la déclaration donne le nom la colonne correspondante dans la table des documents.
