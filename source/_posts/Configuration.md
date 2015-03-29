@@ -113,3 +113,16 @@ Cela peut paraître inutile pour l'instant, mais l'intérêt de cette redondance
 Le fait d'avoir déclaré une clé `visible` avec une valeur `true` implique que le champ sera visible dans la table des documents.
 
 La partie `label` de la déclaration donne le nom la colonne correspondante dans la table des documents.
+
+
+# Ajout de graphique
+
+Pour ajouter un graphique, il suffit de sélectionner un type parmi:
+
+1. histogramme `histogram`
+2. barres horizontales `horizontalbars`
+3. camembert `pie`
+4. carte géographique `map`
+5. réseau `network`
+
+et d'y associer un champ (calculé ou non).
