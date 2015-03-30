@@ -46,6 +46,8 @@ Ainsi, les instances mises en place pour la démonstration du projet au directeu
 
 Les deux premières instances sont aussi disponibles dans le dépôt vitrine: [showcase](https://github.com/madec-project/showcase).
 
+Isabelle y a aussi ajouté une étude sur les séries télévisées.
+
 # dalekjs
 
 J'ai commencé à mettre en place des tests, non pas unitaires, mais de comportement de l'application: en utilisant [dalekjs](http://dalekjs.com), on peut écrire des scénarios de test de l'application.
