@@ -126,3 +126,7 @@ Pour ajouter un graphique, il suffit de sélectionner un type parmi:
 5. réseau `network`
 
 et d'y associer un champ (calculé ou non).
+
+Le plus simple est un histogramme.
+
+Tous les graphiques sont inclus dans le `dashboard` (tableau de bord), c'est-à-dire la page d'accueil d'ezVIS.
