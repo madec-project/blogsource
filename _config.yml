@@ -6,14 +6,14 @@
 title: MADEC
 subtitle: Visualisation d'information structurée en rapport
 description:
-author: François Parmentier 
+author: MADEC
 email:
 language: fr-FR
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
-root: /
+url: http://madec-project.github.io/blog
+root: /blog/
 permalink: :year/:month/:day/:title/
 tag_dir: tags
 archive_dir: archives
@@ -23,7 +23,7 @@ permalink_defaults:
 
 # Directory
 source_dir: source
-public_dir: public
+public_dir: blog
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -32,7 +32,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 highlight:
   enable: true
