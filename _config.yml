@@ -12,8 +12,8 @@ language: fr-FR
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://madec-project.github.io/blog
-root: /blog/
+url: http://madec-project.github.io/
+root: /
 permalink: :year/:month/:day/:title/
 tag_dir: tags
 archive_dir: archives
@@ -23,7 +23,7 @@ permalink_defaults:
 
 # Directory
 source_dir: source
-public_dir: blog
+public_dir: public
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -91,4 +91,5 @@ feed:
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: https://github.com/madec-project/madec-project.github.io
