@@ -21,7 +21,8 @@ Chaque rapport mis en ligne correspond à une instance configurée de façon rel
 Par ailleurs, les instances peuvent être gérées grâce à une interface à la prise en main aisée.  
 La figure 1 présente [l’interface d’administration](https://github.com/madec-project/ezmaster) qui permet créer et gérer (modification, suppression) les instances et de les configurer.
 
-![Figure 1 : interface d’administration et outil de paramétrage d’un rapport](/ezmaster-edit-instance.png)
+{% asset_img ezmaster-edit-instance.png [Figure 1 : interface d’administration et outil de paramétrage d’un rapport] %}
+Figure 1 : interface d’administration et outil de paramétrage d’un rapport
 
 À partir de données structurées en UTF8 et mises à disposition dans des fichiers de différents formats (csv, tsv ou XML) la configuration consiste à :
 - sélectionner les champs à afficher ou à utiliser pour les calculs,
@@ -33,7 +34,8 @@ La figure 1 présente [l’interface d’administration](https://github.com/made
 ## Fonctionnalités d’exploration
 À ce stade du développement, l’outil offre un rapport web constitué d’une page d’accueil présentant le tableau de bord et un index sous forme de menu à partir desquels il est possible de naviguer vers des informations plus détaillées et les notices correspondantes. Les facettes complètent les graphiques en  proposant  des filtres complémentaires  pour mettre en évidence d’autres résultats. La figure 2 présente un des graphiques du tableau de bord avec les facettes associées et le corpus sous forme de tableau.
 
-![Figure 2 : Détail du tableau de bord](/ezvis-dashboard.png)
+{% asset_img ezvis-dashboard.png [Figure 2 : Détail du tableau de bord] %}
+Figure 2 : Détail du tableau de bord
 
 La suite du développement prévoit d’autres types de représentations comme des cartes, des réseaux ainsi que des fonctionnalités comme l’export ou la sécurisation de l’interface.
 
@@ -45,14 +47,17 @@ Enfin, le fait qu’il s’agisse d’un logiciel libre autorise son appropriati
 ## Connaissance de la production scientifique liée à une thématique 
 À partir d’un corpus constitué thématiquement, il est possible de mettre en évidence des éléments concernant la production scientifique, son évolution ainsi que la répartition en sous-thématiques, par exemple. La figure 3 illustre l’utilisation d’un graphique de type camembert qui représente la répartition thématique du corpus. Il est possible en cliquant sur une partie du graphique d’avoir accès à la liste des résultats correspondants. Il est également possible d’utiliser les facettes pour mettre à jour le graphique de manière dynamique le graphique.
 
-![Figure 3 : Mise en évidence de l’utilisation des facettes pour filtrer les résultats](/ezvis-facets.png)
+{% asset_img ezvis-facets.png [Figure 3 : Mise en évidence de l’utilisation des facettes pour filtrer les résultats] %}
+Figure 3 : Mise en évidence de l’utilisation des facettes pour filtrer les résultats
 
 ## Exploration du contenu d’un corpus
 Il peut être utile avant la mise en ligne de notices bibliographiques de vérifier la qualité des données ou leur homogénéité lorsque les origines et les formats sont différents. La figure 4 illustre l’exploration du corpus mis à disposition par un éditeur dans le cadre d’un projet.
 
-![Figure 4 : Exploration d’un corpus de notice bibliographique](/ezvis-biblio-corpus.png)
+{% asset_img ezvis-biblio-corpus.png [Figure 4 : Exploration d’un corpus de notice bibliographique]%}
+Figure 4 : Exploration d’un corpus de notice bibliographique
 
 ## Analyse des consultations de ressources en ligne
 ezVIS peut être utilisé pour réaliser des comptages d’autres types d’informations structurées et le choix d’un logiciel libre favorise fortement l’élargissement de l’usage. La figure 5 illustre l’utilisation d’ezVIS pour la mise en évidence du détail des consultations.
 
-![Figure 5 : Détail  des consultations de ressources numériques](/ezvis-logs.png)
+{% asset_img ezvis-logs.png [Figure 5 : Détail  des consultations de ressources numériques] %}
+Figure 5 : Détail  des consultations de ressources numériques

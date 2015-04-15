@@ -15,7 +15,7 @@ Afin de ne pas perdre des articles sur MADEC en général, et de pouvoir les sto
 
 Nous avons choisi un générateur de site statique nommé [Hexo](http://hexo.io).
 
-J'ai [transcrit le poster](/2015/03/13/Presentation/) soumis (et accepté?) à [VSST](http://atlas.irit.fr/).
+J'ai [transcrit le poster](2015/03/13/Presentation/) soumis (et accepté?) à [VSST](http://atlas.irit.fr/).
 
 J'ai aussi commencé un article sur le minimum à savoir pour [configurer un ezVIS](/2015/03/19/Configuration/).
 
