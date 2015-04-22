@@ -16,6 +16,14 @@ Pour obtenir une URL relativement courte (en tout cas plus courte que http://mad
 
 Un compte Twitter [ezvis_project](http://twitter.com/ezvis_project) a aussi été créé (en ces temps de communication autour d'ezVIS, ça peut servir).
 
+# vimadec / vpmadec / puppet
+
+Le travail avec Patrice commence à porter ses fruits:
+
+- ajout d'un script d'installation d'une app ezmaster à partir de l'URL de son `.tar.gz`,
+- mise sous surveillance du processus `ezmaster` afin de le relancer automatiquement quand il s'arrête (via [forever](https://www.npmjs.com/package/forever)).
+- demande de création d'une machine virtuelle de production `vpmadec`.
+
 # ezVIS
 
 ## login/password
@@ -34,3 +42,9 @@ Le mot de passe sous forme `plain` est simplement le mot de passe en clair. Mais
 Ainsi, on connaît l'empreinte du mot de passe, mais pas le mot de passe lui-même.
 
 Pour obtenir l'empreinte SHA-1 d'un mot de passe, on peut utiliser des commandes comme `shasum` ou `sha1sum` (en n'incluant pas de passage à la ligne dans le mot de passe), ou bien des sites de génération comme [SHA1 online](http://www.sha1-online.com/).
+
+## Accès aux ressources externes
+
+Pour pouvoir stocker les ressources: ezref (serveur web statique).
+
+TODO: rédiger
