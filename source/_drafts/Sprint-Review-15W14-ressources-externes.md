@@ -37,14 +37,28 @@ On peut maintenant limiter l'accès à un rapport ezVIS en utilisant la clé `ac
   }
 ```
 
-Le mot de passe sous forme `plain` est simplement le mot de passe en clair. Mais comme ce n'est pas une bonne pratique, on peut remplacer son usage par celui de `sha1` qui remplace un mot de passe par son [empreinte SHA-1](http://fr.wikipedia.org/wiki/SHA-1).
+Le mot de passe sous forme `plain` est simplement le mot de passe en clair.
+Mais comme ce n'est pas une bonne pratique, on peut remplacer son usage par
+celui de `sha1` qui remplace un mot de passe par son [empreinte
+SHA-1](http://fr.wikipedia.org/wiki/SHA-1).
 
 Ainsi, on connaît l'empreinte du mot de passe, mais pas le mot de passe lui-même.
 
-Pour obtenir l'empreinte SHA-1 d'un mot de passe, on peut utiliser des commandes comme `shasum` ou `sha1sum` (en n'incluant pas de passage à la ligne dans le mot de passe), ou bien des sites de génération comme [SHA1 online](http://www.sha1-online.com/).
+Pour obtenir l'empreinte SHA-1 d'un mot de passe, on peut utiliser des
+commandes comme `shasum` ou `sha1sum` (en n'incluant pas de passage à la ligne
+dans le mot de passe), ou bien des sites de génération comme [SHA1
+online](http://www.sha1-online.com/).
 
 ## Accès aux ressources externes
+
+### ezref
 
 Pour pouvoir stocker les ressources: ezref (serveur web statique).
 
 TODO: rédiger
+
+### JBJ
+
+Pour pouvoir appliquer une table de correspondance présente dans les
+`corpusFields`, on a ajouté une action `mappingVar` à JBJ, qui fonctionne
+comme `mapping`, mais dont les arguments sont différents.
