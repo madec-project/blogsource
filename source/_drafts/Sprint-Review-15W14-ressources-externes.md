@@ -1,5 +1,5 @@
 title: "Sprint Review #15W14: ressources externes"
-date: 2015-04-28 10:00:00
+date: 2015-05-04 14:00:00
 tags:
 - blog
 - twitter
@@ -8,6 +8,8 @@ tags:
 - ezref
 - login
 - flyingFields
+- nodejs
+- forever
 ---
 Voici venue la revue de sprint numéro 10, qui a pour thème principal *les ressources externes*.
 
@@ -21,6 +23,8 @@ Pour obtenir une URL relativement courte (en tout cas plus courte que http://mad
 
 Un compte Twitter [ezvis_project](http://twitter.com/ezvis_project) a aussi été créé (en ces temps de communication autour d'ezVIS, ça peut servir).
 
+{% asset_img ezVisTwitter.png [Compte Twitter pour ezVIS] %}
+
 # vimadec / vpmadec / puppet
 
 Le travail avec Patrice commence à porter ses fruits:
@@ -30,6 +34,22 @@ Le travail avec Patrice commence à porter ses fruits:
 - demande de création d'une machine virtuelle de production `vpmadec`.
 
 # ezVIS
+
+## Test sous node v0.12
+
+En utilisant [nvm](https://github.com/creationix/nvm), nous avons lancé et testé à la main ezVIS, et tout a marché.
+
+Il a néanmoins fallu passer par un `npm rebuild` pour recompiler/récupérer les modules binaires correspondant à cette version (principalement `bson` et `kerberos`)
+
+## Affichage de la version
+
+Pour faciliter les échanges avec les utilisateurs (il y en a eu avec une personne d'Orléans, par mél), on affiche la version d'ezVIS dans le navigateur:
+
+{% asset_img ezvis-version-browser.png [Affichage de la version d'ezVIS dans le navigateur] %}
+
+mais aussi lors du lancement d'une instance ezVIS:
+
+{% asset_img ezvis-version-cli.png [Affichage de la version d'ezVIS dans le CLI] %}
 
 ## login/password
 
@@ -43,16 +63,11 @@ On peut maintenant limiter l'accès à un rapport ezVIS en utilisant la clé `ac
 ```
 
 Le mot de passe sous forme `plain` est simplement le mot de passe en clair.
-Mais comme ce n'est pas une bonne pratique, on peut remplacer son usage par
-celui de `sha1` qui remplace un mot de passe par son [empreinte
-SHA-1](http://fr.wikipedia.org/wiki/SHA-1).
+Mais comme ce n'est pas une bonne pratique, on peut remplacer son usage par celui de `sha1` qui remplace un mot de passe par son [empreinte SHA-1](http://fr.wikipedia.org/wiki/SHA-1).
 
 Ainsi, on connaît l'empreinte du mot de passe, mais pas le mot de passe lui-même.
 
-Pour obtenir l'empreinte SHA-1 d'un mot de passe, on peut utiliser des
-commandes comme `shasum` ou `sha1sum` (en n'incluant pas de passage à la ligne
-dans le mot de passe), ou bien des sites de génération comme [SHA1
-online](http://www.sha1-online.com/).
+Pour obtenir l'empreinte SHA-1 d'un mot de passe, on peut utiliser des commandes comme `shasum` ou `sha1sum` (en n'incluant pas de passage à la ligne dans le mot de passe), ou bien des sites de génération comme [SHA1 online](http://www.sha1-online.com/).
 
 ## Accès aux ressources externes
 
@@ -66,21 +81,15 @@ Pour pouvoir stocker les ressources: ezref (serveur web statique).
 
 ### flyingFields
 
-Les `flyingFields` sont les cousins des `documentFields` et des
-`corpusFields`. Ils sont un croisement, dans le sens où ils permettent
-l'interopérabilité des uns et des autres.
+Les `flyingFields` sont les cousins des `documentFields` et des `corpusFields`. Ils sont un croisement, dans le sens où ils permettent l'interopérabilité des uns et des autres.
 
 ### JBJ
 
-Pour pouvoir appliquer une table de correspondance présente dans les
-`corpusFields`, on a ajouté une action `mappingVar` à JBJ, qui fonctionne
-comme `mapping`, mais dont les arguments sont différents.
+Pour pouvoir appliquer une table de correspondance présente dans les `corpusFields`, on a ajouté une action `mappingVar` à JBJ, qui fonctionne comme `mapping`, mais dont les arguments sont différents.
 
 ### Exemple: externaliser la table de correspondance d'une carte géographique
 
-Pour projeter des données sur la carte du monde, jusqu'ici, on était obligé de
-traduire les noms des pays en codes ISO (c'est ainsi que sont identifiés les
-pays sur la carte):
+Pour projeter des données sur la carte du monde, jusqu'ici, on était obligé de traduire les noms des pays en codes ISO (c'est ainsi que sont identifiés les pays sur la carte):
 
 ```javascript
     "$fields.country" : {
@@ -116,9 +125,7 @@ Nous avons amélioré l'opérateur `mapping` de JBJ pour qu'il puisse traiter di
     }
 ```
 
-Puis, nous avons créé un opérateur similaire à `mapping` qui, au lieu de
-prendre en entrée l'objet courant et en paramètre la table de correspondance,
-permet de mettre en paramètre deux noms de variable: l'entrée et la table.
+Puis, nous avons créé un opérateur similaire à `mapping` qui, au lieu de prendre en entrée l'objet courant et en paramètre la table de correspondance, permet de mettre en paramètre deux noms de variable: l'entrée et la table.
 Il s'appelle `mappingVar` (ou `combine`).
 
 ```json
