@@ -2,15 +2,16 @@ title: "Sprint Review #15W14: ressources externes"
 date: 2015-05-04 14:00:00
 tags:
 - blog
-- twitter
-- jbj
-- ezvis
 - ezref
-- login
+- ezvis
 - flyingFields
-- nodejs
 - forever
+- jbj
+- login
+- nodejs
+- twitter
 ---
+
 Voici venue la revue de sprint numéro 10, qui a pour thème principal *les ressources externes*.
 
 # madec-project.github.io
