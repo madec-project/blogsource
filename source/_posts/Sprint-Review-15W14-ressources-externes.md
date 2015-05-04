@@ -14,6 +14,14 @@ tags:
 
 Voici venue la revue de sprint numéro 10, qui a pour thème principal *les ressources externes*.
 
+# Tâches
+
+- 18 tâches prévues
+- 10 tâches effectuées
+- 22 tâches au total
+- plus de 46 points de complexité prévus (avec des incertitudes)
+- 36,5 points de complexité résolus (avec des tâches non prévues): dans la moyenne
+
 # madec-project.github.io
 
 J'ai créé un page pour l'organisation `madec-project` sur [GitHub](https://github.com), celle qui contient tous les programmes liés au projet MADEC. GitHub offrant l'hébergement d'un site statique, nous avions déjà opté pour [Hexo](http://hexo.io) pour ce blog.
