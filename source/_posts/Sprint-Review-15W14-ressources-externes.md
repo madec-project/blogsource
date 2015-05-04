@@ -36,11 +36,12 @@ Un compte Twitter [ezvis_project](http://twitter.com/ezvis_project) a aussi ét�
 
 # vimadec / vpmadec / puppet
 
-Le travail avec Patrice commence à porter ses fruits:
+Le travail avec Patrice, Martial et Philippe porte ses fruits:
 
 - ajout d'un script d'installation d'une app ezmaster à partir de l'URL de son `.tar.gz`,
-- mise sous surveillance du processus `ezmaster` afin de le relancer automatiquement quand il s'arrête (via [forever](https://www.npmjs.com/package/forever)).
-- demande de création d'une machine virtuelle de production `vpmadec`.
+- mise sous surveillance du processus `ezmaster` afin de le relancer automatiquement quand il s'arrête (via [forever](https://www.npmjs.com/package/forever)),
+- création d'une machine virtuelle de production `vpmadec`,
+- création d'un accélérateur sécurisé vers cette machine virtuelle.
 
 # ezVIS
 
