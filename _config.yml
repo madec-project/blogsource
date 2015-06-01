@@ -75,6 +75,7 @@ pagination_dir: page
 
 # Disqus
 disqus_shortname: madecproject
+comment_provider: disqus:
 
 # Extensions
 ## Plugins: https://github.com/hexojs/hexo/wiki/Plugins
