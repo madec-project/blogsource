@@ -47,8 +47,10 @@ En plus de la correction apportée pour fonctionner avec [forever](#forever), ez
 
 1. une optimisation de la fonction *reverse-proxy*, ce qui a éliminé les ralentissements observés après quelques utilisations des instances qu'`ezmaster` surveillait [11fba01](https://github.com/madec-project/ezmaster/commit/11fba019f60f782a80d6cbdd31649c7667926a66),
 2. l'affichage de l'app utilisée par une instance, et de sa version [#30](https://github.com/madec-project/ezvis/issues/30)
+   {% asset_img ezmaster_app_version.png [Affichage des versions des apps utilisées] %}
 3. ajout d'une prévisualisation de l'URL que va donner le nom technique d'une instance qu'on est en train de créer [#32](https://github.com/madec-project/ezvis/issues/32)
 4. le numéro de version d'une instance a été rendu optionnel (dans le but de simplifier les URL résultantes) [#18](https://github.com/madec-project/ezvis/issues/18)
+   {% asset_img ezmaster_optional_version.gif [La version est maintenant optionnelle] %}
 
 # ezVIS
 
@@ -66,6 +68,7 @@ Voir [issue #39](https://github.com/madec-project/ezvis/issues/39).
 ## Améliorations mineures
 
 - [#38](https://github.com/madec-project/ezvis/issues/38): ajout de la possibilité de rendre les labels sur les graphiques plus courts (sur le même principe que ce qui avait déjà été fait pour les [`horizontalbars`](https://github.com/madec-project/ezvis#horizontalbars)), pour les `histogram`s, et pour les `pie`s. Pour ce dernier, ce ne sont pas les labels eux-mêmes qui sont raccourcis, mais leur équivalent dans la légende du camembert,
+  {% asset_img ezvis_pie_shortlabels.png [Camemberts sans et avec labels raccourcis] %}
 - [#31](https://github.com/madec-project/ezvis/issues/31): la référence à amCharts qui apparaissait comme un petit lien `js Charts` en haut à gauche des graphiques a été déplacé en bas à droite des graphiques, emplacement jugé moins gênant (il est moins souvent placé sur une barre sur laquelle on clique). Rappel: cette référence est nécessaire, car l'enlever requerrait de payer la société qui produit cette bibliothèque,
 - [#28](https://github.com/madec-project/ezvis/issues/28): les labels des camemberts (qui apparaissent autour des parts du graphique) sont maintenant désactivables (pour ne plus voir que les nombres). Il faut utiliser `removeLabels: true`,
 - [#37](https://github.com/madec-project/ezvis/issues/37): nous avons ajouté un exemple de configuration `ezvis` pour des fichiers `.tsv` [dans le showcase](https://github.com/madec-project/showcase/blob/master/basis_loader_tsv/repository.json).
@@ -91,8 +94,10 @@ Les graphiques `horizontalbars`, `histogram`, `pie` et `map` utilisent la même 
 
 Ces graphiques simples sont donc désormais exportables à partir d'un menu présent en haut à droite. Ils permettent:
 - l'annotation (dessin sur l'image, à la souris),
+  {% asset_img ezvis_annotation.png [Annotation des graphiques] %}
 - la sauvegarde de l'image (avec son éventuelle annotation), aux formats JPG, PNG, SVG et même PDF,
 - la sauvegarde des données ayant permis la construction du graphique (sauf pour les cartes, que nous n'avons pas réussi à activer), aux formats CSV, XLSX et JSON.
+  {% asset_img ezvis_chart_image_exports.gif [Exports d'un graphique] %}
 
 Lors des tests, nous nous sommes aperçus que l'export CSV exportait toutes les valeurs sauf la première (en général la plus grande). La déclaration d'un problème dans leur système de support a provoqué une mise à jour dans la journée. Bravo à [amCharts](http://www.amcharts.com/).
 
@@ -102,6 +107,8 @@ Nous avions reperé qu'il existait aussi une fonction d'export dans la biblioth�
 
 Le menu d'export des réseaux se résume donc à un bouton qui exporte une image PNG.
 
+{% asset_img ezvis_export_network.png [Export image des réseaux] %}
+
 Pour le détails des exports des graphiques, voir le [ticket #36](https://github.com/madec-project/ezvis/issues/36).
 
 ### documents
@@ -109,6 +116,8 @@ Pour le détails des exports des graphiques, voir le [ticket #36](https://github
 L'export des documents était déjà présent dans `ezvis`, mais uniquement sur la page des documents, où on exporte tous les documents présents sur la page, avec une sélection basique, par filtrage.
 
 Il est désormais présent aussi sur la page des graphiques, et prend aussi en compte les filtres venant du graphique et des facettes. Voir [#20](https://github.com/madec-project/ezvis/issues/20).
+
+{% asset_img ezvis_chart_exports.gif [Export des documents d'un graphique] %}
 
 ## http dans les documentFields / nosave
 
