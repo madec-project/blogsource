@@ -38,7 +38,7 @@ Nous avons identifié 4 étapes pour le calcul d'un taux de citation normalisé:
 ## 1. Calculer le nombre de publications par année
 
 Ce calcul se fait sur le corpus complet, donc on peut stocker le résultat dans un `corpusFields` (appelons-le `publiPerYear`).
-Nous avons un opérateur classique pour compter le nombre de documents par valeurs distinctes d'un champ: [`distinct`](https://github.com/madec-project/ezvis/blob/master/OPERATORS.md#distinct).
+Nous avons un opérateur classique pour compter le nombre de documents par valeurs distinctes d'un champ: [`distinct`](https://github.com/madec-project/ezvis/blob/v6.7.2/OPERATORS.md#distinct).
 
 ```json
 {
@@ -100,7 +100,7 @@ De la même manière, ce calcul peut se faire sur tout le corpus. On le stocke d
 }
 ```
 
-Cette fois, nous avons utilisé l'opérateur [`sum_field1_by_field2`](https://github.com/madec-project/ezvis/blob/master/OPERATORS.md#sum_field1_by_field2) qui ramène bien ce qui nous intéresse:
+Cette fois, nous avons utilisé l'opérateur [`sum_field1_by_field2`](https://github.com/madec-project/ezvis/blob/v6.7.2/OPERATORS.md#sum_field1_by_field2) qui ramène bien ce qui nous intéresse:
 
 ```json
 [
@@ -190,11 +190,11 @@ Pour obtenir un objet JSON:
 
 Cet objet JSON donne directement accès à un taux de citation global, en utilisant, par exemple `"getproperty": "2008"`, on récupère la valeur associée: `15.56`.
 
-C'est pourquoi nous avons créé l'action [`array2object`](https://github.com/castorjs/node-jbj#array2object), qui transforme un tableau d'objets `{_id,value}` en objet associant les `_id` et les `value`s.
+C'est pourquoi nous avons créé l'action [`array2object`](https://github.com/castorjs/node-jbj/tree/v3.9.0#array2object), qui transforme un tableau d'objets `{_id,value}` en objet associant les `_id` et les `value`s.
 
 Malheureusement, l'action JBJ `getproperty` ne prend qu'un paramètre littéral, et s'applique sur l'environnement courant. Or, nous voulons parcourir le tableau des taux de citations pour pouvoir normaliser chaque valeur par rapport à la valeur correspondante dans le tableau global.
 
-Nous avons donc créé le pendant de `getproperty` prenant des variables en paramètres: [`getpropertyvar`](https://github.com/castorjs/node-jbj#getpropertyvar), qui prend en paramètre un tableau de deux noms de variables: la variable contenant le tableau, et la variable contenant l'indice à aller chercher.
+Nous avons donc créé le pendant de `getproperty` prenant des variables en paramètres: [`getpropertyvar`](https://github.com/castorjs/node-jbj/tree/v3.9.0#getpropertyvar), qui prend en paramètre un tableau de deux noms de variables: la variable contenant le tableau, et la variable contenant l'indice à aller chercher.
 
 Ça a permis d'appliquer le `flyingFields` suivant au résultat de l'opérateur retournant le nombre de publication par année:
 
@@ -252,7 +252,7 @@ Un taux de citation normalisé par année est intéressant à comparer à un nom
 
 Un autre moyen est de superposer les deux graphiques (une manière classique est d'avoir un histogramme et une ligne, comme dans [cette démonstration de la bibliothèque amCharts](http://www.amcharts.com/demos/column-and-line-mix/)).
 
-Nous avons donc introduit le moyen de le faire avec ezVIS 6.7.2, en ajoutant la propriété [`overlay`](https://github.com/madec-project/ezvis/#overlay) à un graphique de type `histogram`:
+Nous avons donc introduit le moyen de le faire avec ezVIS 6.7.2, en ajoutant la propriété [`overlay`](https://github.com/madec-project/ezvis/tree/v6.7.2/#overlay) à un graphique de type `histogram`:
 
 ```json
       {
