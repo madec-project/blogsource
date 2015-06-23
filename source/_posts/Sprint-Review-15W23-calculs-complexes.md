@@ -375,7 +375,7 @@ Les exports de documents prennent maintenant comme noms de colonnes les labels d
 
 # Mise à jour de getting-started-with-visir
 
-Le dépôt `getting-started-with-visir` a été renommé en `getting-started-with-ezvis`, la documentation adaptée à la version 6+ d'ezVIS, ainsi que l'exemple fourni.
+Le dépôt `getting-started-with-visir` a été renommé en [`getting-started-with-ezvis`](https://github.com/madec-project/getting-started-with-ezvis), la documentation adaptée à la version 6+ d'ezVIS, ainsi que l'exemple fourni.
 
 # Explication d'ezVIS pour ISTEX
 
