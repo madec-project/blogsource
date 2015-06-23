@@ -353,7 +353,7 @@ Nous utilisons des fichiers extraits du WoS (Web of Science) au format TSV (Tabu
 
 Nous avons trouvé des champs contenant des guillemets (*double quotes* anglaises), non échappés (mais c'est normal, il n'y avait pas d'ambiguité), et c'est visiblement ce qui posait problème. Une correction a été apportée à la bibliothèque qui analyse les CSV: csv-string. Voir [ticket 19 de csv-string](https://github.com/touv/node-csv-string/pull/19).
 
-Mais après tests, les fichiers qui posaient problème ne passent toujours pas correctement.
+Mais après tests, les fichiers qui posaient problème ne passent toujours pas correctement: sur un corpus de 999 notices, seules les notices contenant des guillemets ne sont pas chargées (en enlevant les guillemets, tout passe).
 
 # Tests de dépôt de plusieurs fichiers (XML ou CSV)
 
