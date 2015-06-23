@@ -372,7 +372,7 @@ Les modifications des `documentFields` dans la configuration d'une instance ne s
 # Test de la prise en compte des modifications de corpus dans ezMaster
 
 Les modifications du corpus d'une instance (suppression de notices) ne sont pas prises en compte.
-Par contre l'ajout d'un nouveau corpus dans la même instance est bien traité.
+Par contre l'ajout d'un nouveau corpus dans la même instance est bien traité et les modifications des `documentFields` dans la configuration d'une instance sont également prises en compte pour le nouveau corpus.
 
 # Documentation du protocole HTTP dans les documentFields
 
