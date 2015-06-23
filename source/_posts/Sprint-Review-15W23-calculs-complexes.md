@@ -250,6 +250,8 @@ Ce `flyingFields` appliqué à l'opérateur `distinct(Year)` via l'URL http://lo
 
 Un taux de citation normalisé par année est intéressant à comparer à un nombre de publications par année, sur un corpus donné. Dans les versions 6.6 d'ezVIS, le seul moyen disponible était de créer un graphe avec les publications par année, puis un autre graphe avec les taux de citations pour qu'ils soient un au-dessus de l'autre dans le tableau de bord. Pas très pratique.
 
+{% asset_img ezvis-comparaison-graphes.png [Comparaison de deux histogrammes en les plaçant un au-dessus de l'autre] %}
+
 Un autre moyen est de superposer les deux graphiques (une manière classique est d'avoir un histogramme et une ligne, comme dans [cette démonstration de la bibliothèque amCharts](http://www.amcharts.com/demos/column-and-line-mix/)).
 
 Nous avons donc introduit le moyen de le faire avec ezVIS 6.7.2, en ajoutant la propriété [`overlay`](https://github.com/madec-project/ezvis/tree/v6.7.2/#overlay) à un graphique de type `histogram`:
