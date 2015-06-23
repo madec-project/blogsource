@@ -365,6 +365,10 @@ Après test, ce comportement ne se produit pas avec des fichiers CSV.
 
 13 rapports ont été créés sur la machine de production, sans aucun problème (rappel: 12 rapports étaient déjà de trop sur la machine d'intégration avant qu'ezMaster soit corrigé).
 
+# Test de la prise en compte des modifications de configuration et de corpus dans ezMaster
+
+Les modifications des `documentFields` dans la configuration d'une instance ne sont pas prises en compte, même après rechargement du corpus.
+
 # Documentation du protocole HTTP dans les documentFields
 
 L'utilisation du protocole HTTP dans les `documentFields` n'avait pas été documentée, c'est chose faite: [6a7147](https://github.com/madec-project/ezvis/commit/6a7147cda9bdc27dbb7e942e477ebdebd40e9495).
