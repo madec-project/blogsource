@@ -365,9 +365,14 @@ Après test, ce comportement ne se produit pas avec des fichiers CSV.
 
 13 rapports ont été créés sur la machine de production, sans aucun problème (rappel: 12 rapports étaient déjà de trop sur la machine d'intégration avant qu'ezMaster soit corrigé).
 
-# Test de la prise en compte des modifications de configuration et de corpus dans ezMaster
+# Test de la prise en compte des modifications de configuration dans ezMaster
 
 Les modifications des `documentFields` dans la configuration d'une instance ne sont pas prises en compte, même après rechargement du corpus.
+
+# Test de la prise en compte des modifications de corpus dans ezMaster
+
+Les modifications du corpus d'une instance (suppression de notices) ne sont pas prises en compte.
+Par contre l'ajout d'un nouveau corpus dans la même instance est bien traité.
 
 # Documentation du protocole HTTP dans les documentFields
 
