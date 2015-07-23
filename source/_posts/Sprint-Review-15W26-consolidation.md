@@ -281,7 +281,7 @@ Voir sur GitHub: [f8cde74](https://github.com/castorjs/node-jbj/commit/f8cde7496
 
 La taille des `INPUT`, `STYLESHEET` et `RESULT` était fixe. Elle est maintenant dépendante de la largeur de la fenêtre du navigateur.
 
-{% asset_img jbj-plgrnd-textareas.png [Agrandissment des éditeurs du JBJ Playground] %}
+{% asset_img jbj-plgrnd-textareas.png [Agrandissement des éditeurs du JBJ Playground] %}
 
 Voir sur GitHub: [PR 12](https://github.com/castorjs/node-jbj/pull/12).
 
@@ -307,8 +307,11 @@ Voir sur GitHub: [8174aae](https://github.com/castorjs/node-jbj/commit/8174aae0d
 
 Quand on ajoute dans la configuration d'ezVIS une propriété `addlinkstojbj` à `true`, on ajoute un lien vers le JBJ Playground :
 - dans la page d'affichage d'une notice (`/display/`) [7f51427](https://github.com/madec-project/ezvis/commit/7f514271584bc032f94eab1f6b1a18a0da5cd900)
+    {% asset_img ezvis-display-jbj.png [Bouton JBJ dans l'affichage d'une notice] %}
 - dans la liste des documents (`/documents.html`) [25f64c3](https://github.com/madec-project/ezvis/commit/25f64c3549542dc42a343bd47629c6d0192eea9a)
+    {% asset_img ezvis-documents-jbj.png [Bouton JBJ dans la liste des documents] %}
 - dans les graphiques (`/chart.html`) [c0dad22](https://github.com/madec-project/ezvis/commit/c0dad222e63b7473dad342778ffa9437adf12a32)
+    {% asset_img ezvis-chart-jbj.png [Bouton JBJ dans les graphiques] %}
 
 Voir dans la documentation, [l'annexe sur JBJ](http://ezvis.readthedocs.org/en/latest/JBJ/).
 
@@ -321,7 +324,7 @@ Auparavant, [`castor-clean`](https://github.com/castorjs/castor-clean/) était u
 Maintenant, quand tout s'est bien passé, elle écrit `OK`.
 Sinon, le message est:
 
-```
+```txt
 Warning: no collections dropped.
          Either you mistyped the name, or it was already cleaned up.
 ```
