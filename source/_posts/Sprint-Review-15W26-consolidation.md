@@ -177,6 +177,8 @@ La nouvelle documentation, divisée en pages plus courtes, et agrémentée d'ill
 Elle est mise à jour à chaque mise à jour du dépôt GitHub, et *responsive* (lisible sur un téléphone mobile).
 Au besoin, on pourrait même en garder des versions différentes (une pour la version 6.*, et une pour la version suivante, par exemple).
 
+{% asset_img ezvis-readthedocs.png [Nouvelle documentation d'ezVIS, sur ReadTheDocs] %}
+
 Voir sur GitHub: [#51](https://github.com/madec-project/ezvis/issues/51).
 
 # Meilleurs messages d'erreur
@@ -271,11 +273,15 @@ Voir sur GitHub: [#61](https://github.com/madec-project/ezvis/issues/61).
 Nous avions déjà une recherche dans les actions, mais pas dans les exemples.
 C'est fait.
 
+{% asset_img jbj-plgrnd-examples-search.png [Recherche parmi les exemples du JBJ Playground] %}
+
 Voir sur GitHub: [f8cde74](https://github.com/castorjs/node-jbj/commit/f8cde749693fbd6ff59642a5f23f8e7d93cacf1a).
 
 ### Agrandissement des éditeurs
 
 La taille des `INPUT`, `STYLESHEET` et `RESULT` était fixe. Elle est maintenant dépendante de la largeur de la fenêtre du navigateur.
+
+{% asset_img jbj-plgrnd-textareas.png [Agrandissment des éditeurs du JBJ Playground] %}
 
 Voir sur GitHub: [PR 12](https://github.com/castorjs/node-jbj/pull/12).
 
@@ -290,6 +296,10 @@ Voir sur GitHub: [e3915c3](https://github.com/castorjs/node-jbj/commit/e3915c3f9
 ### Ajouter un champ URL
 
 Nous avons ajouté un champ `URL` sous l'`input` pour pouvoir remplir cet éditeur avec la réponse d'une requête renvoyant du JSON.
+
+{% asset_img jbj-plgrnd-url-input.png [Le champ de saisie d'une URL dans le JBJ Playground] %}
+
+{% asset_img jbj-plgrnd-url-json.png [Remplissage automatique de l'input avec le contenu d'une URL dans le JBJ Playground] %}
 
 Voir sur GitHub: [8174aae](https://github.com/castorjs/node-jbj/commit/8174aae0d8fd3a7c8c5c57f0548ff40747363406).
 
