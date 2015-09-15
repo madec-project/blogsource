@@ -4,6 +4,7 @@ tags:
 - csv-string
 - bugs
 - erreurs
+- ezvis
 - validation
 - chargement
 - jbj
@@ -31,15 +32,14 @@ Les erreurs de chargement sont maintenant sauvegardées dans un fichier `instanc
 Lorsque la variable d'environnement `NODE_ENV` ne vaut pas `production`, ces erreurs sont aussi affichées dans la sortie standard d'erreur.
 En clair, cela signifie que si on utilise ezvis via un terminal on peut voir ces erreurs (sauf si la variable en question a été créée/modifiée), mais que pour l'instant, l'utilisation exclusive d'ezmaster ne le permet pas.
 
-[#66](https://github.com/madec-project/ezvis/issues/66)
-[#67](https://github.com/madec-project/ezvis/issues/67)
+Voir sur GitHub : [#66](https://github.com/madec-project/ezvis/issues/66) [#67](https://github.com/madec-project/ezvis/issues/67)
 
 ## Visualisation du chargement
 
 Lors du chargement des données (par exemple au démarrage d'ezvis), au lieu de laisser l'administrateur d'une instance dans l'expectative, à ne pas savoir où en est le chargement, on affiche maintenant la progression du chargement en direct:
 
 <script type="text/javascript" src="https://asciinema.org/a/8xu5zzhclccty0sahnstip58z.js" id="asciicast-8xu5zzhclccty0sahnstip58z" async></script>
-[#63](https://github.com/madec-project/ezvis/issues/63)
+Voir sur GitHub : [#63](https://github.com/madec-project/ezvis/issues/63)
 
 ## Validation du chargement
 
@@ -53,7 +53,7 @@ Fri Sep 11 2015 17:47:55 GMT+0200 (CEST)
 ---------------------------------
 ```
 
-[#68](https://github.com/madec-project/ezvis/issues/68)
+Voir sur GitHub : [#68](https://github.com/madec-project/ezvis/issues/68)
 
 
 ## Amélioration des messages d'erreurs de JBJ
@@ -62,7 +62,7 @@ Jusqu'à présent, les erreurs de JBJ (le langage utilisé pour la configuration
 Dorénavant, elles sont toutes traitées de la même manière, et affichées lors du chargement.
 On ajoute, derrière le message d'erreur qui peut encore être abscons (c'est un message d'erreur javascript), le nom de l'action qui a provoqué cette erreur (mais pas le nom de ses alias).
 
-[#64](https://github.com/madec-project/ezvis/issues/64)
+Voir sur GitHub : [#64](https://github.com/madec-project/ezvis/issues/64)
 
 ## csv-string
 
@@ -119,4 +119,4 @@ Maintenant:
     }
 ```
 
-[#65](https://github.com/madec-project/ezvis/issues/65)
+Voir sur GitHub : [#65](https://github.com/madec-project/ezvis/issues/65)
