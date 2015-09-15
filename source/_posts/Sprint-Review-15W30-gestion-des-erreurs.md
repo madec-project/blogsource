@@ -7,6 +7,7 @@ tags:
 - validation
 - chargement
 - jbj
+- log
 ---
 Ce quatorzième et avant-dernier sprint avait pour thème *la gestion des erreurs*.
 Nous avons apporté quelques modifications concernant la gestion des erreurs et leur signalement, ajouté une visualisation du chargement des données à `ezvis` et quelques moyens de valider ce chargement.
@@ -16,7 +17,7 @@ Au passage, nous avons ajouté des fonctionnalités à JBJ (dans l'optique de fa
 
 ## Tâches
 
-- 9 taĉhes prévues
+- 9 tâches prévues
 - 6 tâches terminées
 - plus de 21,5 points de complexité prévus
 - 32 points de complexité effectués
@@ -45,7 +46,7 @@ Lors du chargement des données (par exemple au démarrage d'ezvis), au lieu de 
 À la fin d'un chargement, un fichier `instance_load.log` existe avec des informations sur les opérations de synchronisation qui ont eu lieu:
 
 ```
-$ cat data15_load.json 
+$ cat data15_load.log
 /Lorraine_WOS_Moselle_publis2007-2012_SansLorraineSansMoselle_UTF8.csv : 3449
 Total    : 3449 documents
 Fri Sep 11 2015 17:47:55 GMT+0200 (CEST)
@@ -59,20 +60,20 @@ Fri Sep 11 2015 17:47:55 GMT+0200 (CEST)
 
 Jusqu'à présent, les erreurs de JBJ (le langage utilisé pour la configuration d'ezvis) étaient traitées de manière hétérogène.
 Dorénavant, elles sont toutes traitées de la même manière, et affichées lors du chargement.
-On ajoute derrière le message d'erreur qui peut encore être abscons (c'est un message d'erreur javascript) le nom de l'action qui a provoqué cette erreur (mais pas le nom de ses alias).
+On ajoute, derrière le message d'erreur qui peut encore être abscons (c'est un message d'erreur javascript), le nom de l'action qui a provoqué cette erreur (mais pas le nom de ses alias).
 
 [#64](https://github.com/madec-project/ezvis/issues/64)
 
 ## csv-string
 
-Lors de la mise au point d'une instance, on peut rencontre une erreur JBJ concernant une action `parseCSV` ou `parseCVSFile`.
+Lors de la mise au point d'une instance, on peut rencontrer une erreur JBJ concernant une action `parseCSV` ou `parseCVSFile`.
 Sachant que ces actions JBJ utilisent une bibliothèque appelée [csv-string](https://www.npmjs.com/package/csv-string), il est pratique de pouvoir reproduire (puis éliminer) ces erreurs en dehors du processus ezvis (qui peut être long, si le nombre de documents est élevé).
-C'est pourquoi j'ai écrit une commande `csv-string` qui applique l'analyse d'un CSV avec les options par défaut en utilisant la même bibliothèque qu'ezvis: csv-string.
+C'est pourquoi j'ai écrit une [commande `csv-string`](https://github.com/parmentf/csv-string-command) qui applique l'analyse d'un CSV avec les options par défaut en utilisant la même bibliothèque qu'ezvis: csv-string.
 
 Son installation est similaire à celle d'ezvis:
 
 ```bash
-$ npm install -g csv-string
+$ npm install -g csv-string-command
 ```
 
 Cette commande lit l'entrée standard et écrit sur la sortie standard (et éventuellement la sortie standard d'erreur).
